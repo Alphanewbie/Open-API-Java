@@ -21,7 +21,7 @@ public class MyFunctionalExam3 {
 	}
 	
 	public static int sum(int x, int y) {
-		return (x + y);
+		return x + y;
 	}
 }
 

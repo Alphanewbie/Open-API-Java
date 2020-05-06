@@ -1,18 +1,18 @@
 package lamdaexam;
 
 public class Television implements RemoteControl2{
-	//ÇÊµå
+	//í•„ë“œ
 	private int volume;
 	
-	//turnOn() Ãß»ó ¸Þ¼ÒµåÀÇ ½ÇÃ¼ ¸Þ¼Òµå
+	//turnOn() ì¶”ìƒ ë©”ì†Œë“œì˜ ì‹¤ì²´ ë©”ì†Œë“œ
 	public void turnOn() {
-		System.out.println("TV¸¦ ÄÕ´Ï´Ù.");
+		System.out.println("TVë¥¼ ì¼­ë‹ˆë‹¤.");
 	}	
-	//turnOff() Ãß»ó ¸Þ¼ÒµåÀÇ ½ÇÃ¼ ¸Þ¼Òµå
+	//turnOff() ì¶”ìƒ ë©”ì†Œë“œì˜ ì‹¤ì²´ ë©”ì†Œë“œ
 	public void turnOff() {
-		System.out.println("TV¸¦ ²ü´Ï´Ù.");
+		System.out.println("TVë¥¼ ë•ë‹ˆë‹¤.");
 	}
-	//setVolume() Ãß»ó ¸Þ¼ÒµåÀÇ ½ÇÃ¼ ¸Þ¼Òµå
+	//setVolume() ì¶”ìƒ ë©”ì†Œë“œì˜ ì‹¤ì²´ ë©”ì†Œë“œ
 	public void setVolume(int volume) {
 		if(volume>RemoteControl2.MAX_VOLUME) {
 			this.volume = RemoteControl2.MAX_VOLUME;
@@ -21,6 +21,6 @@ public class Television implements RemoteControl2{
 		} else {
 			this.volume = volume;
 		}
-		System.out.println("ÇöÀç TV º¼·ý: " + volume);
+		System.out.println("í˜„ìž¬ TV ë³¼ë¥¨: " + volume);
 	}
 }

@@ -1,26 +1,26 @@
 package lamdaexam;
 
 public interface RemoteControl3 {
-	//»ó¼ö
+	//ìƒìˆ˜
 	int MAX_VOLUME = 10;
 	int MIN_VOLUME = 0;
 	
-	//Ãß»ó ¸Ş¼Òµå
+	//ì¶”ìƒ ë©”ì†Œë“œ
 	void turnOn();
 	void turnOff();
 	void setVolume(int volume);
 	
-	//µğÆúÆ® ¸Ş¼Òµå
+	//ë””í´íŠ¸ ë©”ì†Œë“œ
 	default void setMute(boolean mute) {
 		if(mute) {
-			System.out.println("¹«À½ Ã³¸®ÇÕ´Ï´Ù.");
+			System.out.println("ë¬´ìŒ ì²˜ë¦¬í•©ë‹ˆë‹¤.");
 		} else {
-			System.out.println("¹«À½ ÇØÁ¦ÇÕ´Ï´Ù.");
+			System.out.println("ë¬´ìŒ í•´ì œí•©ë‹ˆë‹¤.");
 		}
 	}
 	
-	//Á¤Àû ¸Ş¼Òµå
+	//ì •ì  ë©”ì†Œë“œ
 	static void changeBattery() {
-		System.out.println("°ÇÀüÁö¸¦ ±³È¯ÇÕ´Ï´Ù.");
+		System.out.println("ê±´ì „ì§€ë¥¼ êµí™˜í•©ë‹ˆë‹¤.");
 	}
 }

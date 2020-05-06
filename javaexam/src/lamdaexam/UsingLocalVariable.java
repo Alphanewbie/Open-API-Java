@@ -1,15 +1,17 @@
 package lamdaexam;
 
 public class UsingLocalVariable {
-	void test_method(int arg) {  //arg´Â final Æ¯¼ºÀ» °¡Áü
-		int localVar = 40; 	//localVar´Â final Æ¯¼ºÀ» °¡Áü
+	void test_method(int arg) {  
+		int localVar = 40; 	
 		
-		//arg = 31;  		//final Æ¯¼º ¶§¹®¿¡ ¼öÁ¤ ºÒ°¡
-		//localVar = 41; 	//final Æ¯¼º ¶§¹®¿¡ ¼öÁ¤ ºÒ°¡
+		//arg = 31;  		
+		//localVar = 41; 
+		
+		System.out.println(arg + ":" + localVar);
         
-		//¶÷´Ù½Ä
+		//ëžŒë‹¤ì‹
 		MyFunctionalInterface5 fi= () -> {
-			//·ÎÄÃº¯¼ö »ç¿ë
+			//ë¡œì»¬ë³€ìˆ˜ ì‚¬ìš©
 			System.out.println("arg: " + arg); 
 			System.out.println("localVar: " + localVar + "\n");
 		};

@@ -1,11 +1,11 @@
 package lamdaexam;
 
 public interface RemoteControl1 {
-	//»ó¼ö
+	//ìƒìˆ˜
 	int MAX_VOLUME = 10;
 	int MIN_VOLUME = 0;
 	
-	//Ãß»ó ¸Ş¼Òµå
+	//ì¶”ìƒ ë©”ì†Œë“œ
 	void turnOn();
 	void turnOff();
 	void setVolume(int volume);

@@ -1,19 +1,19 @@
 package lamdaexam;
 
 public class Audio implements RemoteControl2 {
-	//ÇÊµå
+	//í•„ë“œ
 	private int volume;
 	private boolean mute;
 	
-	//turnOn() Ãß»ó ¸Ş¼ÒµåÀÇ ½ÇÃ¼ ¸Ş¼Òµå
+	//turnOn() ì¶”ìƒ ë©”ì†Œë“œì˜ ì‹¤ì²´ ë©”ì†Œë“œ
 	public void turnOn() {
-		System.out.println("Audio¸¦ ÄÕ´Ï´Ù.");
+		System.out.println("Audioë¥¼ ì¼­ë‹ˆë‹¤.");
 	}	
-	//turnOff() Ãß»ó ¸Ş¼ÒµåÀÇ ½ÇÃ¼ ¸Ş¼Òµå
+	//turnOff() ì¶”ìƒ ë©”ì†Œë“œì˜ ì‹¤ì²´ ë©”ì†Œë“œ
 	public void turnOff() {
-		System.out.println("Audio¸¦ ²ü´Ï´Ù.");
+		System.out.println("Audioë¥¼ ë•ë‹ˆë‹¤.");
 	}
-	//setVolume() Ãß»ó ¸Ş¼ÒµåÀÇ ½ÇÃ¼ ¸Ş¼Òµå
+	//setVolume() ì¶”ìƒ ë©”ì†Œë“œì˜ ì‹¤ì²´ ë©”ì†Œë“œ
 	public void setVolume(int volume) {
 		if(volume>RemoteControl2.MAX_VOLUME) {
 			this.volume = RemoteControl2.MAX_VOLUME;
@@ -22,16 +22,16 @@ public class Audio implements RemoteControl2 {
 		} else {
 			this.volume = volume;
 		}
-		System.out.println("ÇöÀç Audio º¼·ı: " + volume);
+		System.out.println("í˜„ì¬ Audio ë³¼ë¥¨: " + volume);
 	}
 	
 	@Override
 	public void setMute(boolean mute) {
 		this.mute = mute;
 		if(mute) {
-			System.out.println("Audio ¹«À½ Ã³¸®ÇÕ´Ï´Ù.");
+			System.out.println("Audio ë¬´ìŒ ì²˜ë¦¬í•©ë‹ˆë‹¤.");
 		} else {
-			System.out.println("Audio ¹«À½ ÇØÁ¦ÇÕ´Ï´Ù.");
+			System.out.println("Audio ë¬´ìŒ í•´ì œí•©ë‹ˆë‹¤.");
 		}
 	}	
 }

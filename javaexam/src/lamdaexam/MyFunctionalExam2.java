@@ -10,7 +10,8 @@ public class MyFunctionalExam2 {
 		};
 		fi.method2(2);
 		
-		fi = (x) -> { System.out.println(x*5); };
+		// 식이 하나일땐 그냥 리턴해도 됨.
+		fi = x -> { System.out.println(x*5); };
 		fi.method2(2);
 		
 		fi = x -> System.out.println(x*5);
