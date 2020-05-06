@@ -10,7 +10,10 @@ class LocalTest {
             System.out.println("ls : " + ls);   	// Local Call      
             System.out.println(name);        	// Java
             System.out.println(su);				// 100
-            //su++;
+            // su++;
+            // 지역 변수로 선언되어 있는 값은 자동으로 final로 선언되어서 바꿀 수가 없다.
+            name = "python";
+            // 인스턴스로 선언되어 있는건 바꿀수 있다.
          }
       }          
       Local lt = new Local();
