@@ -7,7 +7,7 @@ public class MyFunctionalExam3 {
 		fi = (x, y) -> {
 			int result = x + y;
 			return result;
-		};
+		}; //오버라이딩 해야되는 함수를 보고 매개변수 갯수, 타입을 고려해서 넣는다.
 		System.out.println(fi.method3(2, 5));
 		
 		fi = (x, y) ->  {return x + y; };

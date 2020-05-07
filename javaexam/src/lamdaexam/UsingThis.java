@@ -7,9 +7,10 @@ public class UsingThis {
 		int innerField = 20;
 
 		void test_method() {
-			//ëŒë‹¤ì‹
 			MyFunctionalInterface4 fi= () -> {
 				System.out.println("outterField: " + outterField);
+				// ¾Æ¿ìÅÍ Å¬·¡½º¿¡ ´ëÇÑ °´Ã¼¸¦ »ç¿ëÇÏ´Â ¹æ¹ı.
+				// Áï innerÅ¬·¡½º¸¦ Æ÷ÇÔÇÏ°í ÀÖ´Â ¹Ù±ùÀÇ °´Ã¼ÀÎ UsingThisÀÇ °´Ã¼¸¦ »ç¿ëÇÑ´Ù.
 				System.out.println("outterField: " + UsingThis.this.outterField + "\n");
 				
 				System.out.println("innerField: " + innerField);

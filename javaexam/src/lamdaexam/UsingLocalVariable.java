@@ -4,14 +4,17 @@ public class UsingLocalVariable {
 	void test_method(int arg) {  
 		int localVar = 40; 	
 		
-		//arg = 31;  		
-		//localVar = 41; 
+		// ¹Ø¿¡ ¶÷»ç½Ä¿¡¼­ »ç¿ëÇÏ±â ¶§¹®¿¡ ÀÚµ¿ÀûÀ¸·Î finalÀÌ ºÙ¾î¼­ ¼öÁ¤ÇÒ ¼ö ¾ø´Ù.
+//		arg = 31;  		
+//		localVar = 41; 
+		
 		
 		System.out.println(arg + ":" + localVar);
         
-		//ëŒë‹¤ì‹
+		//¶÷´Ù½Ä
 		MyFunctionalInterface5 fi= () -> {
-			//ë¡œì»¬ë³€ìˆ˜ ì‚¬ìš©
+			//·ÎÄÃº¯¼ö »ç¿ë
+			// ÀÌ°Íµµ ÀÍ¸í Áö¿ª ÀÌ³ÊÇÔ¼ö ÀÌ±â ¶§¹®¿¡ ÀÚµ¿ÀûÀ¸·Î À§¿¡ ¿¡·¯³­´Ù.
 			System.out.println("arg: " + arg); 
 			System.out.println("localVar: " + localVar + "\n");
 		};
